@@ -8,5 +8,3 @@ Most of the code you need is in the [LoginViewModel](./sample-swift-app/LoginVie
 ## Installation
 
 1. Run `pod install`
-2. Drag and drop the `SeamSdk.framework` file given to you by Seam into the
-   project
