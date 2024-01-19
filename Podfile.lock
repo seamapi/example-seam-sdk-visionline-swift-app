@@ -1,0 +1,37 @@
+PODS:
+  - BerTlv (0.2.5)
+  - CocoaLumberjack (3.8.2):
+    - CocoaLumberjack/Core (= 3.8.2)
+  - CocoaLumberjack/Core (3.8.2)
+  - JSONModel (1.8.0)
+  - Mixpanel (5.0.2)
+  - SeamSDK (0.0.1):
+    - BerTlv
+    - CocoaLumberjack
+    - JSONModel
+    - Mixpanel
+
+DEPENDENCIES:
+  - SeamSDK (from `../seam-phone-ios/SeamSDK.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - BerTlv
+    - CocoaLumberjack
+    - JSONModel
+    - Mixpanel
+
+EXTERNAL SOURCES:
+  SeamSDK:
+    :path: "../seam-phone-ios/SeamSDK.podspec"
+
+SPEC CHECKSUMS:
+  BerTlv: c94b89a7b93bf8c1881691a8d105ec87a4a10759
+  CocoaLumberjack: f8d89a516e7710fdb2e9b8f1560b16ec6040eef0
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  Mixpanel: 62e5fb088d56a7ba1369aeb335d0bff7ebae061e
+  SeamSDK: 2c9711785437617ab4195c6be3c8dde3f4a931e5
+
+PODFILE CHECKSUM: 122973a92489b4e646cfe5c24a61ed65fc18c6f8
+
+COCOAPODS: 1.14.3
