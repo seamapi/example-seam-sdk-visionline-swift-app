@@ -4,6 +4,22 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/SeosMobileKeysSDK.framework/Info.plist</key>
+		<data>
+		/lk9+Xa20I6Yr2T/JvcQHnlSZ30=
+		</data>
+		<key>Frameworks/SeosMobileKeysSDK.framework/SeosMobileKeysSDK</key>
+		<data>
+		qNVjYYsoXDxXPeiWKtV2CboJ6o0=
+		</data>
+		<key>Frameworks/SeosMobileKeysSDK.framework/_CodeSignature/CodeResources</key>
+		<data>
+		pXNAktgtajZX5pZWytFaztSDr8g=
+		</data>
+		<key>Frameworks/SeosMobileKeysSDK.framework/license.plist</key>
+		<data>
+		IzfkL5mMc7L3JGt8X4kSQEIq3I8=
+		</data>
 		<key>Headers/SeamSDK-Swift.h</key>
 		<data>
 		KPHv/vs8NyecjTKCxfgIbbbUtdY=
@@ -14,23 +30,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rNbneXQEsuOmiQKpXqYhyB/Bvh8=
+		i6ejZQIqZ9jnqfK5aPCGpekV2lI=
 		</data>
-		<key>Modules/SeamSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/SeamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		LlJGyaQtFb3Ajw40CeVCvbhIpVE=
+		BH9Mdd1mh1Xf9tFqx2FM0WBP3yc=
 		</data>
-		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
 		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
-		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		X/QL4cEeVyXNsBmn+RdOx33JvHM=
+		1sllpd4RtUGMgDKjaYJdQIxVWKg=
 		</data>
-		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		PgrdzMwey/kmbZVUNweXod5IRXA=
+		XNdGjPrC8UHPRLl4Ts6cGfjqI04=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,6 +55,34 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/SeosMobileKeysSDK.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sEWl+2NnTzMnU+Ltzlb3Z6Sj8d8YoaaSGuPdffra7rs=
+			</data>
+		</dict>
+		<key>Frameworks/SeosMobileKeysSDK.framework/SeosMobileKeysSDK</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nJHCroIaTm1d0xDHb6E0vSjgqmsvm4oPV5j9lD+cst8=
+			</data>
+		</dict>
+		<key>Frameworks/SeosMobileKeysSDK.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nhutWwoIJTjrSphKF08sJ/mOSdra60Gg0GZNHuBGYXw=
+			</data>
+		</dict>
+		<key>Frameworks/SeosMobileKeysSDK.framework/license.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YmA3lI+dYEBpYtR4cCyboB1pX4+anOQlE7mSZKatEeQ=
+			</data>
+		</dict>
 		<key>Headers/SeamSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -53,32 +97,32 @@
 			SmXX6CLdlj4MgQrH/+HWFpuQ/1L3pqSl+XDjJJRRxn0=
 			</data>
 		</dict>
-		<key>Modules/SeamSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/SeamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+pPzcNzfn6m4d35QleBtT9B9mJ4A8Zu2KpPFXBucF9M=
+			9AI3cK3pVynPmhdn8Ky//ZanCtP9M5kBdiG1wk3Ixa0=
 			</data>
 		</dict>
-		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
-		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eKdOd/+HeSLKCpcS3EcvTaZ8ft3Fv3MjE8QYXUuWIdk=
+			7/R9YZtH85HngYxM430+FSWVD2ziYpRYxtJjuhm+1XE=
 			</data>
 		</dict>
-		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FzJrX7g1sWv8WqRP0BRR0uuoC8j7NknQI83cEq3SFIE=
+			XtQ7h6+e3lwD/NmTpXIcY1Kjc1+7xUPn1UwIKong6pY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
