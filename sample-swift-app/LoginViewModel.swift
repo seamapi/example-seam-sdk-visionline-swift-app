@@ -18,6 +18,7 @@ class LoginViewModel: ObservableObject {
 
     @Published var loginError: String?
     @Published var entrances: [String]?
+    @Published var credentials: [String]?
 
     var seam: SeamApi?
     var isEntranceScanningAvailable: Bool { areCredentialsLoaded }
@@ -33,13 +34,11 @@ class LoginViewModel: ObservableObject {
         
         seam = SeamApi(authToken: password)
         isLoggedIn = true
-        startLoadingCredentials()
-    }
-    
-    func startLoadingCredentials() {
+        
         Task {
             isLoadingCredentials = true
             let _ = await seam?.mobileController.launch(providers: ["assa_abloy"])
+            listCredentials()
             areCredentialsLoaded = true
         }
     }
@@ -52,7 +51,7 @@ class LoginViewModel: ObservableObject {
     }
     
     func stopUnlockByTapping() {
-        Task {  
+        Task {
             await seam?.mobileController.stopUnlockByTapping()
             isScanning = false
         }
@@ -61,10 +60,13 @@ class LoginViewModel: ObservableObject {
     func listCredentials() {
         Task {
             let credentialsResult = await seam?.mobileController.listCredentials()
-            
             switch(credentialsResult!) {
-            case .success(let credentials):
-                print(credentials)
+            case .success(let newCredentials):
+                let credentialStrs = newCredentials.map {
+                    return "\($0.providerId):\($0.cardNumber)"
+                }
+                self.credentials = credentialStrs
+                print("New credentials: \(newCredentials)")
             case .failure(let error):
                 print("Failed to list credentials: \(error)")
             }
