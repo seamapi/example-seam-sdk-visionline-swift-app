@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/SeosMobileKeysSDK.framework/SeosMobileKeysSDK</key>
 		<data>
-		7NgVtU7+H9WJ8ZxyCDrln+6eXvc=
+		1GhhhJEZKYkfeZtVlDaupIususc=
 		</data>
 		<key>Frameworks/SeosMobileKeysSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/SeamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		pWHI0VpCKqZWi986y3e8XgxMuK4=
+		YWaER4bn3nqPXiOgHoRjoN35rdg=
 		</data>
 		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IVnunkYPFsi9s2bs5cm/fjVoB3c=
+		EK4+Me0m8zxNUfyH9cKEqjLw3jQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lATKmxwPwpRqk8Jc2S2qoaB6stHP850/T3wF0S61tpA=
+			7sGzYfm34RHtr7A6qGFwM3EhiQ6NXBYuwucp0/1LIYg=
 			</data>
 		</dict>
 		<key>Frameworks/SeosMobileKeysSDK.framework/_CodeSignature/CodeResources</key>
@@ -101,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zoG0msM9JSUbN/IjSLaNpBUsmeu0WkNXE+L9iLyIzag=
+			mfrmpEAOrzAznnCs1ynFvHGhxfUUu5ewOU8eFwUk0ZU=
 			</data>
 		</dict>
 		<key>Modules/SeamSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gwq27j9myNqPdZfRsUNQiaSbu5NPP9CNYibljvlK+K0=
+			fWQOxxScTtp5UP0uva7TPNNN87roj2NamkdICSuDdMs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

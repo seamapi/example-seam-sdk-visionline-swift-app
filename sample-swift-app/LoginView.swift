@@ -20,7 +20,7 @@ struct LoginView: View {
     var body: some View {
         VStack {
             Text("Seam Swift Sample App")
-            Text("1. Login, in the demo the username is \"user\" and the password is a client session token (use the CLI to make one!). In a real app, you would authenticate a user normally then pass a client session token to the app.\n2. After you're logged in, the phone will load credentials\n3. After credentials are loaded, you can click \"Scan for Entrances\" to scan for new entrances (in sandbox, this will trigger entrances to appear\n4. You can click Unlock Nearest Entrances to unlock nearby entrances")
+            Text("1. Login, in the demo the username is \"user\" and the password is a client session token (use the CLI to make one!). In a real app, you would authenticate a user normally then pass a client session token to the app.\n2. After you're logged in, the phone will load credentials\n3. After credentials are loaded, you can click \"Start unlock by tapping\" to start running the background scan.\n4. Tap phone against a lock that the user has access to to unlock!")
                 .font(.footnote)
                 .foregroundColor(Color.gray)
             TextField("Username", text: $username)
@@ -32,7 +32,7 @@ struct LoginView: View {
             Button(action: {
                 model.login(username: username, password: password)
             }, label: { Text("Login") })
-//            .disabled(model.isLoggedIn)
+            .disabled(model.isLoggedIn)
             .padding(.bottom, 30.0)
             if (model.loginError != nil) {
                 Text(model.loginError ?? "").foregroundColor(Color.red)
@@ -54,27 +54,35 @@ struct LoginView: View {
             }, label: {
                 Text("Refresh credentials")
             })
+            .disabled(!model.isLoggedIn)
             .padding(.bottom, 30.0)
+            
+            Text("Loaded Credentials").foregroundColor(Color.gray).bold()
+            ForEach(model.credentials ?? [], id: \.self, content: {
+                Text($0)
+            })
+            if ((model.credentials ?? []).count == 0) {
+                Text("<empty>").foregroundColor(.gray)
+            }
+            
             Button(action: {
                 model.health()
             }, label: {
                 Text("Ping seam connect")
             })
             .padding(.bottom, 30.0)
-            Text("Entrance List\(model.isScanning ? " (Scanning)" : "")").foregroundColor(Color.gray).bold()
-            ForEach(model.entrances ?? [], id: \.self, content: { entrance in
-                    Text(entrance)
-            })
-            if ((model.entrances ?? []).count == 0) {
-                Text("<empty>").foregroundColor(.gray)
-            }
-            if (model.doorUnlockedSuccess) {
-                Text("Nearest Door Unlocked!").foregroundColor(.green)
-            }
-            if (model.doorUnlockedFailure) {
-                Text("Nearest Door Failed to Unlock").foregroundColor(.red)
-            }
-            Spacer()
+            .padding(.top, 30.0)
+            
+            
+//            Text("Accessible Entrance List").foregroundColor(Color.gray).bold()
+//            ForEach(model.entrances ?? [], id: \.self, content: { entrance in
+//                Text(entrance)
+//            })
+//            if ((model.entrances ?? []).count == 0) {
+//                Text("<empty>").foregroundColor(.gray)
+//            }
+//
+//            Spacer()
         }.padding()
     }
 }

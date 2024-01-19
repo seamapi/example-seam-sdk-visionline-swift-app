@@ -6,7 +6,7 @@ target 'sample-swift-app' do
   use_frameworks!
 
   # Pods for sample-swift-app
-  pod 'SeamSDK', :path => '../seam-phone-ios/SeamSDK.podspec'
+  pod 'SeamSDK', :path => './SeamSDK/SeamSDK.podspec'
 
   target 'sample-swift-appTests' do
     inherit! :search_paths
@@ -18,6 +18,7 @@ target 'sample-swift-app' do
   end
 
 end
+
 
 post_install do |installer|
   installer.generated_projects.each do |project|
